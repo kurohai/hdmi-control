@@ -7,7 +7,6 @@ class BaseConfig(dicto):
 
     def __init__(self, *args, **kwargs):
         super(BaseConfig, self).__init__(*args, **kwargs)
-
         self.port = '/dev/ttyUSB0'
         self.baudrate = 9600
         self.bytesize = serial.EIGHTBITS
