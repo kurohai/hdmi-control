@@ -3,7 +3,7 @@ import serial
 
 
 class BaseConfig(dicto):
-        """docstring for BaseConfig"""
+    """docstring for BaseConfig"""
 
     def __init__(self, *args, **kwargs):
         super(BaseConfig, self).__init__(*args, **kwargs)
