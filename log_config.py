@@ -1,6 +1,3 @@
-#!/home/eburt/.virtualenvs/hdmi-rs232/bin/python
-
-
 import logging
 import sys
 

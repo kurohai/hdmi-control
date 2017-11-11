@@ -1,6 +1,3 @@
-#!/home/eburt/.virtualenvs/hdmi-rs232/bin/python
-
-
 import serial
 from log_config import log, logging
 from codes import ports
