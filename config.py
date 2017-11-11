@@ -3,6 +3,8 @@ import serial
 
 
 class BaseConfig(dicto):
+        """docstring for BaseConfig"""
+
     def __init__(self, *args, **kwargs):
         super(BaseConfig, self).__init__(*args, **kwargs)
 
@@ -11,6 +13,7 @@ class BaseConfig(dicto):
         self.bytesize = serial.EIGHTBITS
         self.stopbits = serial.STOPBITS_ONE
         self.parity = serial.PARITY_NONE
+
 
 class DefaultConfig(BaseConfig):
     """docstring for DefaultConfig"""

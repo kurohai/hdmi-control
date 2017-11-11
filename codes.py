@@ -1,5 +1,6 @@
 from dicto import dicto
 
+
 ports = dicto()
 ports.p01 = '01010101'.decode('hex')
 ports.p02 = '01010102'.decode('hex')

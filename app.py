@@ -41,10 +41,8 @@ def function_test(debug):
         com.write(v)
         log.info(com.in_waiting)
         log.info(com.read(com.in_waiting).encode('hex'))
-        log.info(com.read(com.in_waiting).encode('hex'))
         time.sleep(2)
     com.close()
-
 
 
 @cli.command('switch')
@@ -60,13 +58,6 @@ def hdmi_input_switch(port, debug):
     log.info('Activated port {0}'.format(int(port)))
     log.debug(com.in_waiting)
     log.debug(com.read(com.in_waiting).encode('hex'))
-    log.debug(com.read(com.in_waiting).encode('hex'))
-    # com.flush()
-    com.write(code)
-
-    log.debug(com.in_waiting)
-    log.debug(com.read(com.in_waiting).encode('hex'))
-    log.debug(com.read(com.in_waiting).encode('hex'))
     com.close()
 
 
@@ -79,6 +70,7 @@ def hdmi_device_reboot(debug):
     com.rtscts = True
     com.break_condition = True
     com.send_break()
+
 
 if __name__ == '__main__':
     cli()
